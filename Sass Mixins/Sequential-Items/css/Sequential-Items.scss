@@ -1,0 +1,62 @@
+﻿@import '../../SASS/Animation/_Easings.scss';
+@import '../../SASS/Animation/_Global.scss';
+
+@include keyframes(fade-in) {
+    0% {
+        opacity: 0;
+        @include transform(scale3d(0.8, 0.8, 1));
+    }
+
+    100% {
+        opacity: 1;
+        @include transform(scale3d(1, 1, 1));
+    }
+}
+
+@include keyframes(fade-out) {
+    0% {
+        opacity: 1;
+        @include transform(scale3d(1, 1, 1));
+    }
+
+    100% {
+        opacity: 0;
+        @include transform(scale3d(0.8, 0.8, 1));
+    }
+}
+
+
+
+#example-list {
+    padding: 0;
+
+    > li {
+        opacity: 0;
+        display: block;
+        width: 300px;
+        height: 80px;
+        margin: 0 0 10px 0;
+        border-radius: 10px;
+        background: #aaa;
+    }
+
+    &.fade-in {
+        > li {
+            @include animation(fade-in 1s $easeInOutBack);
+            @include sequential-delay-in(.05, 10);
+            @include animation-fill-mode(forwards);
+        }
+    }
+
+    &.fade-out {
+        > li{
+            @include animation(fade-out 1s $easeInOutBack);
+            @include sequential-delay-out(.05, 10);
+        }
+        
+    }
+}
+
+.hide {
+    display: none;
+}
