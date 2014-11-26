@@ -47,13 +47,16 @@
             @include animation(fade-in 1s $easeInOutBack);
             @include sequential-delay-in(.05, 10);
             @include animation-fill-mode(forwards);
+            
         }
     }
 
     &.fade-out {
         > li{
+            opacity:1;
             @include animation(fade-out 1s $easeInOutBack);
             @include sequential-delay-out(.05, 10);
+            @include animation-fill-mode(forwards);
         }
         
     }

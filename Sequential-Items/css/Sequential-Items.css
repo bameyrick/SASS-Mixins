@@ -207,10 +207,15 @@
       -o-animation-delay: 0.5s;
       animation-delay: 0.5s; }
   #example-list.fade-out > li {
+    opacity: 1;
     -webkit-animation: fade-out 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     -moz-animation: fade-out 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     -o-animation: fade-out 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    animation: fade-out 1s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
+    animation: fade-out 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    animation-fill-mode: forwards; }
     #example-list.fade-out > li:nth-child(10) {
       -webkit-animation-delay: 0.05s;
       -moz-animation-delay: 0.05s;
