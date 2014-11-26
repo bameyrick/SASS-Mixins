@@ -1,4 +1,10 @@
 ﻿/* See http://easings.net/ for visual representations */
+/* For fading in emelents sequentially
+   Use in conjuction with @include animation-fill-mode(fordwards)
+*/
+/* The reverse of the above.
+   Use in conjuction with @include animation-fill-mode(fordwards)
+*/
 @-webkit-keyframes fade-in {
   0% {
     opacity: 0;

@@ -1,0 +1,14 @@
+﻿@mixin box($orient: horizontal, $pack: center, $align: center) {
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    -webkit-box-orient: $orient;
+    -moz-box-orient: $orient;
+    box-orient: $orient;
+    -webkit-box-pack: $pack;
+    -moz-box-pack: $pack;
+    box-pack: $pack;
+    -webkit-box-align: $align;
+    -moz-box-align: $align;
+    box-align: $align;
+}

@@ -1,5 +1,4 @@
-﻿@import '../../SASS/Animation/_Easings.scss';
-@import '../../SASS/Animation/_Global.scss';
+﻿@import '../../Mixins/_All.scss';
 
 @include keyframes(fade-in) {
     0% {

@@ -1,0 +1,23 @@
+﻿@mixin animation-delay($delay){
+	-webkit-animation-delay:$delay;
+	-moz-animation-delay:$delay;
+	-o-animation-delay:$delay;
+	animation-delay:$delay;
+}
+
+@mixin sequential-delay-in($delay, $count){
+    @for $i from 1 through  $count{
+       &:nth-child(#{$i + 1}) {
+           @include animation-delay(#{$delay * $i}s);
+       }
+    }     
+}
+
+@mixin sequential-delay-out($delay, $count){
+    @for $i from 1 through  $count{
+       &:nth-child(#{$count - $i + 1}) {
+           @include animation-delay(#{$delay * $i}s);
+       }
+    }     
+}
+

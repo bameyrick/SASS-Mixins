@@ -1,0 +1,6 @@
+﻿@import '_transform.scss';
+@mixin flip($scaleX: -1) {
+    @include transform(scaleX($scaleX));
+    -ms-filter: "FlipH";
+    filter: FlipH;
+}
