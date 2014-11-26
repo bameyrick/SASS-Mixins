@@ -1,0 +1,5 @@
+﻿@mixin box-flex($value){
+    -webkit-box-flex:$value;
+    -moz-box-flex:$value;
+    box-flex:$value;
+}
