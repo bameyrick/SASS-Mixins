@@ -6,6 +6,10 @@
     <link rel="stylesheet" href="css/Sequential-Items.min.css"/>
 </head>
 <body>
+    <div id="controls">
+        <button id="load-items" class="btn btn-default">Load Items</button>
+        <button id="unload-items" class="btn btn-default hide">Unload Items</button>
+    </div>
     <ul id="example-list">
         <li></li>
         <li></li>
@@ -19,8 +23,7 @@
         <li></li>
     </ul>
 
-    <button id="load-items" class="btn btn-default">Load Items</button>
-    <button id="unload-items" class="btn btn-default hide">Unload Items</button>
+    
     <script>
         var btn_load = document.getElementById("load-items");
         var btn_unload = document.getElementById("unload-items");
