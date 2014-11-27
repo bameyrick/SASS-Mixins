@@ -1,5 +1,14 @@
 ﻿@import '../../Mixins/_All.scss';
 
+body{
+    padding:30px;
+}
+
+#controls{
+    padding:0 0 30px;
+    width:100%;
+}
+
 @include keyframes(fade-in) {
     0% {
         opacity: 0;
@@ -27,9 +36,8 @@
 
 
 #example-list {
-    float:left;
     padding: 0;
-    margin:0 20px 0 0;
+    margin:20px 20px 0 0;
 
     > li {
         opacity: 0;

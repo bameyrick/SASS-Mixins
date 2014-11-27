@@ -1,4 +1,4 @@
-﻿@mixin background-radial($start-color, $startPos: 0%, $end-color, $end-position: 100%) {
+﻿@mixin background-radial($start-color, $end-color, $startPos: 0%, $end-position: 100%) {
     background: -moz-radial-gradient(center, ellipse cover, $start-color $startPos, $end-color $end-position);
     background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop($startPos,$start-color), color-stop($end-position,$end-color));
     background: -webkit-radial-gradient(center, ellipse cover, $start-color $startPos,$end-color $end-position);
