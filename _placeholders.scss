@@ -1,17 +1,17 @@
-﻿@mixin placeholder($content) {
+﻿@mixin placeholder() {
     &::-webkit-input-placeholder {
-        $content
+        @content
     }
 
     &:-moz-placeholder { /* Firefox <= 18 */
-        $content
+        @content
     }
 
-    &::-moz-placeholder{ /* Firefox 19 + */
-        $content
+    &::-moz-placeholder { /* Firefox 19 + */
+        @content
     }
 
-    &:-ms-input-placeholder{
-        $content
+    &:-ms-input-placeholder {
+        @content
     }
 }
